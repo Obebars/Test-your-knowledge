@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Quiz </title>
+    <link rel="stylesheet" type="text/css" href="sheet.css">
+    <script type="text/javascript" src="main.js"> </script>
+  </head>
+
+  <body>
+
+    <div id="page_container">
+
+      <h2 id="title"> Test your knowledge! </h2>
+
+      <div id="quiz_container">
+
+        <form id="quiz">
+
+        <p> What is the generic number of the world's wonders? </p>
+        <input type="text" name="question1">
+
+        <p> Which word represents the electrostatic discharge during a thunderstrom? </p>
+         <input type="radio" name="question2" value="Lightning">Lightning <br>
+         <input type="radio" name="question2" value="Lightening">Lightening
+
+        <p> What is the current number of synthetic chemical elements? </p>
+         <input type="radio" name="question3" value="24"> 24 <br>
+         <input type="radio" name="question3" value="26"> 26 <br>
+         <input type="radio" name="question3" value="22"> 22
+
+        <p> <input id="button" type="button" value="Submit answers" onclick="check()"> </p>
+
+      </form>
+
+      </div>
+
+      <div id="answer_container">
+
+      <p> <h2 id="correct_answers" align="center">  </h2> </p>
+      <img src="Failure.gif" class="image" id="0_correct" alt="Failure">
+      <img src="Meh.gif" class="image" id="1_correct" alt="it's Ok">
+      <img src="Notbad.gif" class="image" id="2_correct" alt="well done">
+      <img src="Cheers.gif" class="image" id="3_correct" alt="Ace">
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
