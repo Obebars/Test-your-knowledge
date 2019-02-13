@@ -9,7 +9,10 @@ function check(){
         correct++;
       }else{
         document.getElementById("quiz").question1.style.color = "red";
-        document.getElementById("quiz").question1.value = 7;
+        document.getElementById("quiz").question1.value = 7; 
+        /* I had to recall the element by its Id because I tried 
+        to usethe let keyword to block the var value to 7 in this 
+        present else statement but it didn't work! */ 
       }
       if (question2 == "Lightning"){
         correct++;
